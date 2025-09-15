@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Form</h1>
+        <form action="/getStudent" method="GET">
+            <label for="studentID">Student ID:</label>
+            <input type="text" id="studentID" name="studentID" />
+            <br/>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" />
+            <br/>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" />
+            <br/>
+            <label for="section">Section:</label>
+            <input type="text" id="section" name="section" />
+            <br/>
+            <input type="submit" value="Submit Student Data" />
+        </form>
+        <a href="/" class="back-link">Go Back to Home</a>
+    </div>
+</body>
+</html>
