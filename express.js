@@ -72,7 +72,7 @@ app.post('/api/student', (req, res) => {
     res.status(201).json(newStudent);
 });
 
-// THIS IS THE NEWLY ADDED ROUTE FOR STUDENTS
+// ROUTE FOR STUDENTS
 app.put('/api/student/:id', (req, res) => {
     const studentId = parseInt(req.params.id);
     const studentIndex = students.findIndex(s => s.id === studentId);
@@ -107,7 +107,7 @@ app.post('/api/admin', upload.single('file'), (req, res) => {
     res.status(201).json(newAdmin);
 });
 
-// THIS IS THE NEWLY ADDED ROUTE FOR ADMINS
+// ROUTE FOR ADMINS
 app.put('/api/admin/:id', (req, res) => {
     const adminId = parseInt(req.params.id);
     const adminIndex = admins.findIndex(a => a.id === adminId);
